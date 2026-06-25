@@ -1,6 +1,6 @@
 # Document Renewal Extractor — App policies (Google Play)
 
-Public policy documents for **Document Renewal Extractor** (`com.stephenheidelberg.deadlinerenew`).
+Public policy documents for **Document Renewal Extractor** (`app.documentrenewalextractor`).
 
 Use these URLs in **Google Play Console** and link them from your store listing where appropriate.
 
