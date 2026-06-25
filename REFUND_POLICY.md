@@ -1,14 +1,14 @@
-# Deadline & Renewal Extractor — Refund Policy
+# Document Renewal Extractor — Refund Policy
 
 **Last updated:** June 2026
 
 **Publisher:** Stephen Heidelberg. Where applicable, apps are offered through **Naamans Creek Ventures LLC**.
 
-The same text is available in the app under **Settings → Refund Policy**.
+The same text is available in the app under **About → Refund Policy**.
 
 ## Overview
 
-**Deadline & Renewal Extractor** offers optional **Pro Monthly** and **Pro Max+ Monthly** subscriptions through **Google Play**. All payments are processed by Google; we do not charge your card directly.
+**Document Renewal Extractor** offers optional **Pro Monthly** and **Pro Max+ Monthly** subscriptions through **Google Play**. All payments are processed by Google; we do not charge your card directly.
 
 ## Google Play purchases and refunds
 
@@ -24,7 +24,7 @@ In general:
 
 1. Open **Google Play Store** on the device used for purchase (or visit [play.google.com](https://play.google.com) while signed into the same Google account)
 2. Go to **Payments & subscriptions → Budget & history** (or **Subscriptions** for active subscriptions)
-3. Find the Deadline Renew charge and follow Google’s **Request a refund** or **Report a problem** options
+3. Find the **Document Renewal Extractor** charge and follow Google’s **Request a refund** or **Report a problem** options
 
 If Google’s self-service options are unavailable or your request is denied, see Google’s help article: [Request a refund for apps & games](https://support.google.com/googleplay/answer/2479637).
 
@@ -34,7 +34,7 @@ To avoid future charges:
 
 1. Open **Google Play Store**
 2. Tap your profile → **Payments & subscriptions → Subscriptions**
-3. Select **Deadline & Renewal Extractor** (or the subscription name shown)
+3. Select **Document Renewal Extractor** (or the subscription name shown)
 4. Tap **Cancel subscription**
 
 You typically retain access until the end of the current billing period. Deleting the app does not cancel an active subscription.
@@ -61,10 +61,10 @@ The free version of the app does not require payment. No refund applies to free 
 
 ## Changes
 
-We may update this refund policy. The current version is always available in this repository and in the app under **Settings → Refund Policy**.
+We may update this refund policy. The current version is always available in this repository and in the app under **About → Refund Policy**.
 
 ## Contact
 
 Refund or billing questions: **designstehev@gmail.com**
 
-You may also use the developer contact shown on the Deadline & Renewal Extractor Google Play store listing.
+You may also use the developer contact shown on the Document Renewal Extractor Google Play store listing.

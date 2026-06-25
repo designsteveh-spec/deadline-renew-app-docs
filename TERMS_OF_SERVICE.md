@@ -1,14 +1,14 @@
-# Deadline & Renewal Extractor — Terms of Service
+# Document Renewal Extractor — Terms of Service
 
 **Last updated:** June 2026
 
 **Publisher:** Stephen Heidelberg. Where applicable, apps are offered through **Naamans Creek Ventures LLC**.
 
-The same text is available in the app under **Settings → Terms of Service**.
+The same text is available in the app under **About → Terms of Service**.
 
 ## Agreement
 
-By installing, accessing, or using **Deadline & Renewal Extractor** (“the app,” “Deadline Renew”), you agree to these Terms of Service. If you do not agree, do not use the app.
+By installing, accessing, or using **Document Renewal Extractor** (“the app”), you agree to these Terms of Service. If you do not agree, do not use the app.
 
 ## Description of the service
 

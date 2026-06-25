@@ -1,12 +1,12 @@
-# Deadline & Renewal Extractor — Privacy Policy
+# Document Renewal Extractor — Privacy Policy
 
 **Last updated:** June 2026
 
-This policy applies to the **Deadline & Renewal Extractor** Android app (also referred to as “Deadline Renew”). The same text is available in the app under **Settings → Privacy Policy**.
+This policy applies to the **Document Renewal Extractor** Android app. The same text is available in the app under **About → Privacy Policy**.
 
 ## Overview
 
-Deadline & Renewal Extractor is an on-device contract and policy deadline utility. Documents are processed locally using deterministic rules — **no third-party AI or OCR**. This policy explains what data the app uses, why, and your rights — including if you are in the European Economic Area (EEA), United Kingdom, or Switzerland.
+Document Renewal Extractor is an on-device contract and policy deadline utility. Documents are processed locally using deterministic rules — **no third-party AI or OCR**. This policy explains what data the app uses, why, and your rights — including if you are in the European Economic Area (EEA), United Kingdom, or Switzerland.
 
 ## Data controller
 
@@ -85,7 +85,7 @@ We do not transfer personal data from your device to servers we operate.
 Depending on where you live, you may have the right to:
 
 - **Access** information about processing (this policy describes what we process)
-- **Erasure** — uninstall the app or clear storage in Android settings (**Settings → Apps → Deadline Renew → Storage → Clear data**)
+- **Erasure** — uninstall the app or clear storage in Android settings (**Settings → Apps → Document Renewal Extractor → Storage → Clear data**)
 - **Withdraw consent** — stop using optional features such as Google Drive import
 - **Object** to processing based on legitimate interest — contact us; given our minimal processing, uninstalling or clearing data is usually sufficient
 - **Lodge a complaint** with your local data protection supervisory authority
@@ -102,10 +102,10 @@ This app is not directed at children. It should not be used by anyone under **16
 
 ## Changes
 
-We may update this policy as the app evolves. Material changes will be reflected in the in-app **Settings → Privacy Policy** text and in this document.
+We may update this policy as the app evolves. Material changes will be reflected in the in-app **About → Privacy Policy** text and in this document.
 
 ## Contact
 
 Privacy questions: **designstehev@gmail.com**
 
-You may also use the developer contact shown on the Deadline & Renewal Extractor Google Play store listing.
+You may also use the developer contact shown on the Document Renewal Extractor Google Play store listing.
