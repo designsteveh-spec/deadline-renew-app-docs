@@ -3,7 +3,7 @@
   Guide for beta testers and QA
 ================================================================================
 
-Package version: 1.0
+Package version: 1.1
 App package ID: app.documentrenewalextractor
 Support: designstehev@gmail.com
 
@@ -11,19 +11,25 @@ Support: designstehev@gmail.com
 WHAT IS IN THIS ZIP
 --------------------------------------------------------------------------------
 
-This archive contains sample documents used to test Document Renewal Extractor.
+This archive is a curated tester package (~25 MB download). It includes the
+best mix of file types and sizes to exercise import, extract, and export
+without downloading the full internal QA corpus.
+
 Files are grouped by purpose:
 
-  synthetic/   Small, hand-made CSV and XLSX files with obvious renewal dates.
-               Good for quick smoke tests and export checks.
+  synthetic/   Small CSV and XLSX with obvious renewal dates. Fast smoke tests.
 
-  realworld/   Larger spreadsheets from public government data (contracts,
-               expirations, HUD portfolios). Good for performance and scale tests.
+  realworld/   Government-style spreadsheets (contracts, expirations, HUD data).
+               Covers medium and large spreadsheet preview behavior.
 
-  documents/   PDF contracts, notices, agendas, and amendments. Mix of tiny
-               synthetic PDFs and large real-world scans.
+  documents/   PDF contracts and notices from small one-pagers up to one
+               ~12 MB real-world RFP packet for large-PDF stress testing.
 
-Total: 24 files (7 CSV, 6 XLSX, 11 PDF)
+Total: 10 test files (3 CSV, 1 XLSX, 6 PDF) plus this guide (TXT + PDF)
+
+Why only 10 files? A smaller zip is easier to download on mobile networks.
+These files were chosen to cover every major format and size band the app
+supports. Internal QA still uses a larger 24-file corpus.
 
 --------------------------------------------------------------------------------
 BEFORE YOU START
@@ -94,9 +100,9 @@ STEP-BY-STEP: IMPORT MANY FILES AT ONCE
 4. Tap Open / Select / Done.
 5. Each selected file is imported into the Files library (up to the 50-file cap).
 
-To build a larger library for browsing tests:
-  - Repeat Browse imports until you have imported everything you need.
-  - Or import in batches of 3–10 files at a time.
+To import the whole package into the Files library:
+  - Import all 10 files in three or four Browse sessions (multi-select helps).
+  - Or import in batches of 3 (Pro extract limit per run).
 
 To extract multiple files in one run:
   1. Import the files on the Files tab (or use Extract tab — see below).
@@ -141,57 +147,44 @@ Free-tier PDF test
   - Extract; confirm at least one deadline appears
 
 Large PDF stress test
-  - Import documents/Highlands-County-Board-July212020.pdf (~26 MB)
+  - Import documents/RFS 318.65-257 F&A TennCare.pdf (~12 MB)
   - Extract; expect preview mode on first run (first pages only)
-  - Extraction may take 10–30 seconds on mid-range devices
+  - Extraction may take 10-30 seconds on mid-range devices
 
 Large spreadsheet test
   - Import realworld/realworld-hhs-expiring-contracts-fy23-fy26.csv (~5 MB)
   - Extract; app uses preview mode (partial data) before full scan
 
 Batch extract (Pro)
-  - Import 3 PDFs from documents/ (pick smaller ones first)
+  - Import commercial-lease-renewal-notice.pdf, law-firm-long-form-master-
+    agreement-test.pdf, and THSA-MSA-Contract-No.-0000001.pdf
   - Tap Extract Deadlines once; confirm all three are processed
 
 Files library test
-  - Import all 24 files in several Browse sessions
-  - Confirm count shows "24 files (max 50)"
+  - Import all 10 files in several Browse sessions
+  - Confirm count shows "10 files (max 50)"
   - Use Search files to find "cook" or "hud"
   - Tap X on one row to remove a single file
 
 --------------------------------------------------------------------------------
-FILE INVENTORY
+FILE INVENTORY (10 FILES)
 --------------------------------------------------------------------------------
 
-SYNTHETIC (small, fast)
-  notice-period-deadlines.csv
-  payment-due-schedule.csv
-  vendor-contract-renewals.csv
-  insurance-policy-renewals.xlsx
-  lease-obligation-tracker.xlsx
-  saas-subscriptions.xlsx
+SYNTHETIC
+  notice-period-deadlines.csv              Quick CSV smoke test
+  insurance-policy-renewals.xlsx           Quick XLSX smoke test
 
-REALWORLD (larger, public-data style)
-  realworld-cook-county-procurement-contracts-amendments.csv      ~2.1 MB
-  realworld-hhs-expiring-contracts-fy23-fy26.csv                  ~5.2 MB
-  realworld-montgomery-county-md-contracts.csv                    ~1.1 MB
-  realworld-philadelphia-professional-services-contracts-fy2020-q4.csv
-  realworld-hud-active-multifamily-portfolio-properties.xlsx      ~16 MB
-  realworld-hud-contracts-rent-utility-allowance.xlsx             ~3.8 MB
-  realworld-hud-mf-assistance-sec8-contracts.xlsx                   ~4.5 MB
+REALWORLD
+  realworld-cook-county-procurement-contracts-amendments.csv   ~2.1 MB
+  realworld-hhs-expiring-contracts-fy23-fy26.csv                ~5.2 MB
+  realworld-hud-contracts-rent-utility-allowance.xlsx           ~3.8 MB
+  realworld-hud-mf-assistance-sec8-contracts.xlsx               ~4.5 MB
 
 DOCUMENTS (PDF)
-  commercial-lease-renewal-notice.pdf          (small)
-  consulting-msa-deadlines.pdf                 (small)
-  saas-order-renewal-terms.pdf                 (small)
-  law-firm-long-form-master-agreement-test.pdf
-  sample-fee-agreement-injected-20260219-223249.pdf
-  N0017806D4860 GM01-R.pdf
-  THSA-MSA-Contract-No.-0000001.pdf
-  RFS 318.65-257 F&A TennCare.pdf              ~11.7 MB
-  RFS 318.65-257 F&A TennCare (SXC Health Solutions - amendment 1).pdf
-  Highlands-County-Board-July212020.pdf        ~25.6 MB
-  70_Social-Acceptance-of-Wind-Energy-Projects.pdf  ~35 MB
+  commercial-lease-renewal-notice.pdf          Small; works on Free tier
+  law-firm-long-form-master-agreement-test.pdf Contract-style extraction
+  THSA-MSA-Contract-No.-0000001.pdf            ~0.8 MB real agreement
+  RFS 318.65-257 F&A TennCare.pdf              ~12 MB large-PDF stress test
 
 --------------------------------------------------------------------------------
 TROUBLESHOOTING
@@ -202,24 +195,22 @@ TROUBLESHOOTING
      test PDFs on the Free tier first.
 
 "File too large" or import rejected
-  -> Check your plan limit (20 / 30 / 40 MB). The wind-energy PDF (~35 MB)
-     needs Pro Max+. Try a smaller PDF from synthetic or small documents/.
+  -> Check your plan limit (20 / 30 / 40 MB). The TennCare PDF (~12 MB) fits
+     Pro and Pro Max+ limits. Free tier max is 20 MB per file.
 
 "No deadlines found"
   -> The engine looks for contract-style renewal, notice, and payment dates.
-     Agenda/meeting PDFs (e.g. Highlands County board packet) may return few
-     or unexpected rows. Scanned image-only PDFs without selectable text
-     cannot be read (no OCR).
+     Some real-world rows may be filtered if they look like meeting or admin
+     dates. Scanned image-only PDFs without selectable text cannot be read
+     (no OCR).
 
 Extraction is slow or app seems frozen
   -> Large PDFs and spreadsheets use preview mode first. Wait for the overlay
-     to finish; very large files can take 30+ seconds. Low-memory devices may
-     be slower on PDFs over 25 MB.
+     to finish; the TennCare PDF and HHS CSV can take 30+ seconds on emulators.
 
 App closed or crashed during a large PDF
-  -> Known risk on low-RAM emulators with 25–35 MB PDFs. Retry on a physical
-     device with more RAM, or test smaller PDFs first. If it repeats, note
-     the file name and device model in your feedback.
+  -> More common on low-RAM emulators. Retry on a physical device, or test
+     the small PDFs first. If it repeats, note the file name and device model.
 
 "Unsupported file type"
   -> Only PDF, DOCX, TXT, CSV, and XLSX are supported. Rename if the extension

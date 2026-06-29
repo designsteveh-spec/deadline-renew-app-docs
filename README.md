@@ -23,4 +23,4 @@ QA and beta testers can download sample documents to exercise import, extract, a
 | **Test file package (zip)** | [Document-Renewal-Extractor-Test-Files.zip](test-files/Document-Renewal-Extractor-Test-Files.zip) |
 | Test files overview | [test-files/README.md](test-files/README.md) |
 
-The zip includes 24 files (PDF, CSV, XLSX) plus **TESTER-GUIDE.pdf** and **TESTER-GUIDE.txt** with step-by-step import instructions and troubleshooting.
+The zip includes **10 curated test files** (PDF, CSV, XLSX) plus **TESTER-GUIDE.pdf** and **TESTER-GUIDE.txt** with step-by-step import instructions and troubleshooting (~20–30 MB download).

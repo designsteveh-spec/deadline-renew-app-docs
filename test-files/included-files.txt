@@ -1,0 +1,14 @@
+# Curated tester package (~25 MB uncompressed, ~20-30 MB zip).
+# One path per line relative to deadline-renew-testFIles root.
+# Lines starting with # are ignored.
+
+synthetic/notice-period-deadlines.csv
+synthetic/insurance-policy-renewals.xlsx
+realworld/realworld-cook-county-procurement-contracts-amendments.csv
+realworld/realworld-hhs-expiring-contracts-fy23-fy26.csv
+realworld/realworld-hud-contracts-rent-utility-allowance.xlsx
+realworld/realworld-hud-mf-assistance-sec8-contracts.xlsx
+documents/commercial-lease-renewal-notice.pdf
+documents/law-firm-long-form-master-agreement-test.pdf
+documents/THSA-MSA-Contract-No.-0000001.pdf
+documents/RFS 318.65-257 F&A TennCare.pdf

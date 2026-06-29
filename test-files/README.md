@@ -1,14 +1,22 @@
 # Test files for QA and beta testers
 
-Download the full package (24 sample documents + tester guide):
+Download the curated tester package (10 sample documents + guide):
 
 **[Document-Renewal-Extractor-Test-Files.zip](Document-Renewal-Extractor-Test-Files.zip)**
 
 | Item | Description |
 |------|-------------|
-| Zip size | ~95 MB (compressed real-world PDFs and spreadsheets) |
-| Contents | 7 CSV, 6 XLSX, 11 PDF in `synthetic/`, `realworld/`, and `documents/` |
+| Zip size | ~20–30 MB (mobile-friendly download) |
+| Contents | 3 CSV, 1 XLSX, 6 PDF in `synthetic/`, `realworld/`, and `documents/` |
 | Guide | `TESTER-GUIDE.txt` and `TESTER-GUIDE.pdf` inside the zip |
+
+## What's included
+
+These 10 files cover every format and size band testers need:
+
+- **Fast smoke tests** — small synthetic CSV and XLSX
+- **Spreadsheet scale** — Cook County, HHS, HUD, and Montgomery County data
+- **PDF range** — tiny notice (Free tier), contract PDFs, and one ~12 MB RFP packet
 
 ## Quick start for testers
 
@@ -26,9 +34,9 @@ Full step-by-step instructions, recommended test scenarios, file inventory, and 
 From this repo:
 
 ```powershell
-# Edit test-files/TESTER-GUIDE.txt if needed, then:
+# Edit test-files/included-files.txt or TESTER-GUIDE.txt, then:
 python scripts/generate-tester-guide-pdf.py
 .\scripts\build-test-files-zip.ps1
 ```
 
-Source fixtures live in the sibling folder `deadline-renew-testFIles` (not committed here).
+Source fixtures live in the sibling folder `deadline-renew-testFIles` (not committed here). Edit `included-files.txt` to change which files ship in the zip.
