@@ -13,3 +13,14 @@ Use these URLs in **Google Play Console** and link them from your store listing 
 The same text is shown in the app under **About**.
 
 **Privacy contact:** designstehev@gmail.com
+
+## Test files for beta testers
+
+QA and beta testers can download sample documents to exercise import, extract, and export flows:
+
+| Resource | URL |
+|----------|-----|
+| **Test file package (zip)** | [Document-Renewal-Extractor-Test-Files.zip](test-files/Document-Renewal-Extractor-Test-Files.zip) |
+| Test files overview | [test-files/README.md](test-files/README.md) |
+
+The zip includes 24 files (PDF, CSV, XLSX) plus **TESTER-GUIDE.pdf** and **TESTER-GUIDE.txt** with step-by-step import instructions and troubleshooting.

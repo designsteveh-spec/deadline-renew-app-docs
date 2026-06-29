@@ -1,0 +1,265 @@
+================================================================================
+  DOCUMENT RENEWAL EXTRACTOR — TEST FILE PACKAGE
+  Guide for beta testers and QA
+================================================================================
+
+Package version: 1.0
+App package ID: app.documentrenewalextractor
+Support: designstehev@gmail.com
+
+--------------------------------------------------------------------------------
+WHAT IS IN THIS ZIP
+--------------------------------------------------------------------------------
+
+This archive contains sample documents used to test Document Renewal Extractor.
+Files are grouped by purpose:
+
+  synthetic/   Small, hand-made CSV and XLSX files with obvious renewal dates.
+               Good for quick smoke tests and export checks.
+
+  realworld/   Larger spreadsheets from public government data (contracts,
+               expirations, HUD portfolios). Good for performance and scale tests.
+
+  documents/   PDF contracts, notices, agendas, and amendments. Mix of tiny
+               synthetic PDFs and large real-world scans.
+
+Total: 24 files (7 CSV, 6 XLSX, 11 PDF)
+
+--------------------------------------------------------------------------------
+BEFORE YOU START
+--------------------------------------------------------------------------------
+
+1. Install Document Renewal Extractor on your Android phone or emulator.
+2. Unzip this package on your device or computer.
+3. Move the folders somewhere easy to reach:
+   - On a phone: Downloads, Google Drive, or Files by Google.
+   - On an emulator: drag files into the emulator window or use adb push.
+
+Supported file types:
+  Free tier:     PDF, DOCX, TXT
+  Pro / Pro Max: PDF, DOCX, TXT, CSV, XLSX
+
+Most files in this package are PDF, CSV, or XLSX. CSV and XLSX require a
+paid subscription (Pro or Pro Max+) to import and extract.
+
+Plan limits (approximate — see in-app Help for current values):
+  Free:     1 file per extraction, up to 20 MB per file
+  Pro:      up to 3 files per extraction, up to 30 MB per file
+  Pro Max+: up to 3 files per extraction, up to 40 MB per file
+  Files tab library: up to 50 stored imports
+
+--------------------------------------------------------------------------------
+HOW THE FILES TAB WORKS
+--------------------------------------------------------------------------------
+
+The Files tab is an in-app library. When you import a document, the app keeps
+its own copy in private storage — not in your Downloads folder.
+
+  - Browse      Pick files from this device (Downloads, internal storage, etc.)
+  - Google Drive Pick files from your Google account (Pro formats filtered by tier)
+  - Clear all   Removes app copies only; your originals are untouched
+
+Imported files stay in the app until you tap Clear all or uninstall the app.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP: IMPORT ONE FILE (FILES TAB)
+--------------------------------------------------------------------------------
+
+1. Open Document Renewal Extractor.
+2. Tap Files in the bottom navigation bar.
+3. Tap Browse (blue button).
+4. In the system file picker:
+   a. Navigate to where you saved the unzipped test files.
+   b. Open the folder (synthetic, realworld, or documents).
+   c. Tap one file (for example: synthetic/notice-period-deadlines.csv).
+   d. Tap Select, Open, or Done (wording varies by Android version).
+5. The file appears in your Files list with its name, size, and source
+   "File picker".
+6. Optional — extract from Files:
+   a. Tap Extract Deadlines (yellow button at top).
+   b. Wait for the progress overlay to finish.
+   c. Review results on the Results tab.
+
+Recommended first file: synthetic/notice-period-deadlines.csv (small, fast)
+or documents/commercial-lease-renewal-notice.pdf (works on Free tier).
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP: IMPORT MANY FILES AT ONCE
+--------------------------------------------------------------------------------
+
+1. Open the Files tab and tap Browse.
+2. In the file picker, long-press the first file (or tap the multi-select icon).
+3. Tap additional files to add them to the selection.
+   Tip: Select up to 3 files if you are testing a Pro plan extract batch.
+4. Tap Open / Select / Done.
+5. Each selected file is imported into the Files library (up to the 50-file cap).
+
+To build a larger library for browsing tests:
+  - Repeat Browse imports until you have imported everything you need.
+  - Or import in batches of 3–10 files at a time.
+
+To extract multiple files in one run:
+  1. Import the files on the Files tab (or use Extract tab — see below).
+  2. Tap Extract Deadlines on the Files tab.
+  3. The app processes the files in your library according to your plan limits.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP: IMPORT FROM EXTRACT TAB (ALTERNATIVE)
+--------------------------------------------------------------------------------
+
+1. Tap Extract in the bottom navigation.
+2. Tap the file upload area or Choose files.
+3. Pick one or more documents from the system picker.
+4. Tap Extract Deadlines.
+5. Review results and export if needed.
+
+Use this path when you want a one-off extraction without saving to the Files
+library first.
+
+--------------------------------------------------------------------------------
+STEP-BY-STEP: IMPORT FROM GOOGLE DRIVE
+--------------------------------------------------------------------------------
+
+1. Upload the unzipped test folders to Google Drive (computer or phone).
+2. In the app, open Files and tap Google Drive.
+3. Sign in if prompted and navigate to your test folder.
+4. Select one or many files, then confirm.
+5. Files appear in the Files list with source "Google Drive".
+
+Note: On the Free tier, the Drive picker only offers PDF, DOCX, and TXT.
+
+--------------------------------------------------------------------------------
+RECOMMENDED TEST SCENARIOS
+--------------------------------------------------------------------------------
+
+Quick smoke test (2 minutes)
+  - Import synthetic/notice-period-deadlines.csv
+  - Extract and export CSV from Results
+
+Free-tier PDF test
+  - Import documents/commercial-lease-renewal-notice.pdf
+  - Extract; confirm at least one deadline appears
+
+Large PDF stress test
+  - Import documents/Highlands-County-Board-July212020.pdf (~26 MB)
+  - Extract; expect preview mode on first run (first pages only)
+  - Extraction may take 10–30 seconds on mid-range devices
+
+Large spreadsheet test
+  - Import realworld/realworld-hhs-expiring-contracts-fy23-fy26.csv (~5 MB)
+  - Extract; app uses preview mode (partial data) before full scan
+
+Batch extract (Pro)
+  - Import 3 PDFs from documents/ (pick smaller ones first)
+  - Tap Extract Deadlines once; confirm all three are processed
+
+Files library test
+  - Import all 24 files in several Browse sessions
+  - Confirm count shows "24 files (max 50)"
+  - Use Search files to find "cook" or "hud"
+  - Tap X on one row to remove a single file
+
+--------------------------------------------------------------------------------
+FILE INVENTORY
+--------------------------------------------------------------------------------
+
+SYNTHETIC (small, fast)
+  notice-period-deadlines.csv
+  payment-due-schedule.csv
+  vendor-contract-renewals.csv
+  insurance-policy-renewals.xlsx
+  lease-obligation-tracker.xlsx
+  saas-subscriptions.xlsx
+
+REALWORLD (larger, public-data style)
+  realworld-cook-county-procurement-contracts-amendments.csv      ~2.1 MB
+  realworld-hhs-expiring-contracts-fy23-fy26.csv                  ~5.2 MB
+  realworld-montgomery-county-md-contracts.csv                    ~1.1 MB
+  realworld-philadelphia-professional-services-contracts-fy2020-q4.csv
+  realworld-hud-active-multifamily-portfolio-properties.xlsx      ~16 MB
+  realworld-hud-contracts-rent-utility-allowance.xlsx             ~3.8 MB
+  realworld-hud-mf-assistance-sec8-contracts.xlsx                   ~4.5 MB
+
+DOCUMENTS (PDF)
+  commercial-lease-renewal-notice.pdf          (small)
+  consulting-msa-deadlines.pdf                 (small)
+  saas-order-renewal-terms.pdf                 (small)
+  law-firm-long-form-master-agreement-test.pdf
+  sample-fee-agreement-injected-20260219-223249.pdf
+  N0017806D4860 GM01-R.pdf
+  THSA-MSA-Contract-No.-0000001.pdf
+  RFS 318.65-257 F&A TennCare.pdf              ~11.7 MB
+  RFS 318.65-257 F&A TennCare (SXC Health Solutions - amendment 1).pdf
+  Highlands-County-Board-July212020.pdf        ~25.6 MB
+  70_Social-Acceptance-of-Wind-Energy-Projects.pdf  ~35 MB
+
+--------------------------------------------------------------------------------
+TROUBLESHOOTING
+--------------------------------------------------------------------------------
+
+"I only see PDFs" or "CSV/XLSX won't import"
+  -> CSV and XLSX require Pro or Pro Max+. Upgrade via the Upgrade tab, or
+     test PDFs on the Free tier first.
+
+"File too large" or import rejected
+  -> Check your plan limit (20 / 30 / 40 MB). The wind-energy PDF (~35 MB)
+     needs Pro Max+. Try a smaller PDF from synthetic or small documents/.
+
+"No deadlines found"
+  -> The engine looks for contract-style renewal, notice, and payment dates.
+     Agenda/meeting PDFs (e.g. Highlands County board packet) may return few
+     or unexpected rows. Scanned image-only PDFs without selectable text
+     cannot be read (no OCR).
+
+Extraction is slow or app seems frozen
+  -> Large PDFs and spreadsheets use preview mode first. Wait for the overlay
+     to finish; very large files can take 30+ seconds. Low-memory devices may
+     be slower on PDFs over 25 MB.
+
+App closed or crashed during a large PDF
+  -> Known risk on low-RAM emulators with 25–35 MB PDFs. Retry on a physical
+     device with more RAM, or test smaller PDFs first. If it repeats, note
+     the file name and device model in your feedback.
+
+"Unsupported file type"
+  -> Only PDF, DOCX, TXT, CSV, and XLSX are supported. Rename if the extension
+     is wrong; do not test .xls (old Excel) or .doc files.
+
+Imported file missing from Files list
+  -> Confirm you tapped Open/Select in the picker (Cancel does nothing).
+     Pull down or leave and re-open the Files tab. Check you are under the
+     50-file library limit.
+
+Clear all removed my test library
+  -> Expected. Re-import from this zip via Browse.
+
+Google Drive picker shows no CSV/XLSX
+  -> You are likely on the Free tier. Use Browse for local copies, or upgrade.
+
+Export or share failed
+  -> Try a different target app in the Android share sheet. Ensure storage
+     permission is granted if your OS version requires it.
+
+Wrong or duplicate dates in results
+  -> Note the file name and snippet text in your report. Some real-world
+     documents contain many date-like fields; not every date is a renewal
+     deadline.
+
+--------------------------------------------------------------------------------
+REPORTING ISSUES
+--------------------------------------------------------------------------------
+
+When filing a bug, please include:
+  - Device model and Android version (or emulator image)
+  - App version (About screen)
+  - Subscription tier (Free / Pro / Pro Max+)
+  - Exact file name from this package
+  - Steps you followed (Files vs Extract, one vs many files)
+  - What you expected vs what happened
+  - Screenshot or screen recording if possible
+
+Email: designstehev@gmail.com
+
+Thank you for testing Document Renewal Extractor.
+
+================================================================================
