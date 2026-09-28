@@ -1,12 +1,12 @@
 # Document Renewal Extractor — Privacy Policy
 
-**Last updated:** June 2026
+**Last updated:** September 2026
 
-This policy applies to the **Document Renewal Extractor** Android app. The same text is available in the app under **About → Privacy Policy**.
+This policy applies to the **Document Renewal Extractor** Android app (also referred to as “Deadline Renew”). The same text is available in the app under **Settings → Privacy Policy**.
 
 ## Overview
 
-Document Renewal Extractor is an on-device contract and policy deadline utility. Documents are processed locally using deterministic rules — **no third-party AI or OCR**. This policy explains what data the app uses, why, and your rights — including if you are in the European Economic Area (EEA), United Kingdom, or Switzerland.
+Document Renewal Extractor is an on-device contract and policy deadline utility. Documents are processed locally using deterministic rules. **Scan Document** runs on-device OCR (open-source Tesseract) on photos you capture; we do **not** send your documents to third-party AI or cloud OCR services. This policy explains what data the app uses, why, and your rights — including if you are in the European Economic Area (EEA), United Kingdom, or Switzerland.
 
 ## Data controller
 
@@ -35,11 +35,12 @@ When you select or import a file (via **Browse**, **Google Drive**, or the Extra
 2. Copy the file into the app’s **private storage** (`filesDir`) so it can be used reliably for extraction and listed on the **Files** screen
 3. Process text on your device to detect renewal dates, notice periods, and similar obligations
 
-Supported formats: **PDF, DOCX, and TXT** with selectable text.
+Supported formats: **PDF, DOCX, and TXT** on all tiers (with selectable text where applicable); **CSV and XLSX** on paid Pro and Pro Max+ plans.
 
 - Extraction runs **entirely on your device**
 - We do **not** receive your documents on our servers
-- We do **not** upload file contents to third-party AI, OCR, or analytics services
+- We do **not** upload file contents to third-party AI, cloud OCR, or analytics services
+- **Scan Document** stores recognized text on your device alongside the PDF it creates; OCR runs locally, not in the cloud
 - Export files (CSV, TXT, ICS) are created on your device; you choose whether and how to share them through other apps
 
 If you delete copied files outside the app (for example via a file manager), the app removes missing entries from its local file list on next launch.
@@ -52,11 +53,11 @@ The **Google Drive** button opens Android’s standard document picker starting 
 
 Google may process data under its own terms when you use Drive or sign in to Google on your device.
 
-## In-app purchases (Pro subscriptions)
+## In-app purchases (Pro and Pro Max+)
 
-**Pro Monthly** and **Pro Max+ Monthly** are optional subscriptions processed entirely by **Google Play Billing**. We do not receive or store your payment card number. Google processes payment under [Google’s terms and privacy policy](https://policies.google.com/privacy).
+Optional paid plans are processed entirely by **Google Play Billing**: **Pro Monthly** or **Annual**, **Pro Max+ Monthly** or **Annual**, and **Pro Max+ Lifetime** (one-time). We do not receive or store your payment card number. Google processes payment under [Google’s terms and privacy policy](https://policies.google.com/privacy).
 
-When you subscribe or tap **Restore purchases**, the app queries Google Play on your device and stores a local entitlement flag so paid features work offline.
+When you subscribe, buy Lifetime, or tap **Restore purchases**, the app queries Google Play on your device and stores a local entitlement flag so paid features work offline.
 
 **Legal basis (GDPR):** performance of a contract (providing the subscription features you purchased).
 
@@ -85,7 +86,7 @@ We do not transfer personal data from your device to servers we operate.
 Depending on where you live, you may have the right to:
 
 - **Access** information about processing (this policy describes what we process)
-- **Erasure** — uninstall the app or clear storage in Android settings (**Settings → Apps → Document Renewal Extractor → Storage → Clear data**)
+- **Erasure** — uninstall the app or clear storage in Android settings (**Settings → Apps → Deadline Renew → Storage → Clear data**)
 - **Withdraw consent** — stop using optional features such as Google Drive import
 - **Object** to processing based on legitimate interest — contact us; given our minimal processing, uninstalling or clearing data is usually sufficient
 - **Lodge a complaint** with your local data protection supervisory authority
@@ -102,7 +103,7 @@ This app is not directed at children. It should not be used by anyone under **16
 
 ## Changes
 
-We may update this policy as the app evolves. Material changes will be reflected in the in-app **About → Privacy Policy** text and in this document.
+We may update this policy as the app evolves. Material changes will be reflected in the in-app **Settings → Privacy Policy** text and in this document.
 
 ## Contact
 

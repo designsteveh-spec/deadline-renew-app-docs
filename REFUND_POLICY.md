@@ -4,7 +4,7 @@
 
 **Publisher:** Stephen Heidelberg. Where applicable, apps are offered through **Naamans Creek Ventures LLC**.
 
-The same text is available in the app under **About → Refund Policy**.
+The same text is available in the app under **Settings → Refund Policy**.
 
 ## Overview
 
@@ -24,7 +24,7 @@ In general:
 
 1. Open **Google Play Store** on the device used for purchase (or visit [play.google.com](https://play.google.com) while signed into the same Google account)
 2. Go to **Payments & subscriptions → Budget & history** (or **Subscriptions** for active subscriptions)
-3. Find the **Document Renewal Extractor** charge and follow Google’s **Request a refund** or **Report a problem** options
+3. Find the Deadline Renew charge and follow Google’s **Request a refund** or **Report a problem** options
 
 If Google’s self-service options are unavailable or your request is denied, see Google’s help article: [Request a refund for apps & games](https://support.google.com/googleplay/answer/2479637).
 
@@ -61,7 +61,7 @@ The free version of the app does not require payment. No refund applies to free 
 
 ## Changes
 
-We may update this refund policy. The current version is always available in this repository and in the app under **About → Refund Policy**.
+We may update this refund policy. The current version is always available in this repository and in the app under **Settings → Refund Policy**.
 
 ## Contact
 
